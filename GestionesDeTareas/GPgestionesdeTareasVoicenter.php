@@ -155,7 +155,7 @@ if (!isset($_SESSION['autenticado']))
 if ($_SESSION['autenticado']) // Mostrar contenido solo si está autenticado
 {
 
-		if (!empty($_SESSION['tareas'][$_SESSION['usuario']])) // condicion de Si el usuario ya tiene tareas
+		if (!empty($_SESSION['tareas'][$_SESSION['usuario']])) // condicion de Si el usuario ya tiene tareas,$_SESSION['tareas'] es un arreglo que guarda las tareas de cada usuario
 		{
 				echo "<hr><h2>Tareas Guardadas:</h2>";
 				
