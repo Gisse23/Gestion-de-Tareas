@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') //Verifica si el formulario fue envia
 					$i = $_POST['indice'];//Capturás cuál tarea por el indice y qué nuevo estado eligió
 					$nuevo_estado = $_POST['nuevo_estado'];
 					
-					if (isset($_SESSION['tareas'][$_SESSION['usuario']][$i])) //
+					if (isset($_SESSION['tareas'][$_SESSION['usuario']][$i])) // si el usuario que está usando la pagina tiene una tarea en la posición $i dentro de su lista de tareas.
 					{
 						$_SESSION['tareas'][$_SESSION['usuario']][$i]['estado'] = $nuevo_estado;//actualiza el estado
 						echo "<p style='color:blue;'>¡Estado actualizado!</p>"; //Mensaje para cuando actualice EL ESTADO
@@ -159,7 +159,7 @@ if ($_SESSION['autenticado']) // Mostrar contenido solo si está autenticado
 		{
 				echo "<hr><h2>Tareas Guardadas:</h2>";
 				
-					foreach ($_SESSION['tareas'][$_SESSION['usuario']] as $i => $tarea) // si ya tiene, entonces un foreach recorre y muestra una por una
+					foreach ($_SESSION['tareas'][$_SESSION['usuario']] as $i => $tarea) // si ya tiene, entonces un foreach recorre y muestra una por una las tareas, del usuario que esta en la pagina
 					{
 						echo "<p><b>Materia:</b> {$tarea['materia']}<br>";
 						echo "<b>Título:</b> {$tarea['titulo']}<br>";
