@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+<Desarrolla un formulario que nos permita cargar solicitud de beca. Los datos son: 
+1.(CI, Nombres, Apellidos, Sexo, estado civil , fecha de nacimiento , edad, nro de telefono, ciudad)
+2.Con quien vive(padres, abuelo,tios,tutor, solo) 
+3.Cuenta con casa(propia, alquilada, familiar, prestada, )
+4.Posee hijos?(1,2,3,0). 
+5.Realidad laboral(Dependiente, independiente, no trabaja). 
+6.Ingreso mensual(0, menor 500000, 500000 -- 10000000, 1000001 -- 2000000, 2000001 -- 4000000, mayor 4000001)
+7.Cuenta con hermanos(1, 2, 2, mas). 
+8.Debe enviar un escribo del por que solicita la beca.
+9.Solicitante debe enviar una posible contraseña y debe conformarla. 
+10.Debera enviar certificado de estudio, y foto de la cedula frontal, por separado. 
+11.Debera tener boton de enviar y limpiar>
+
+<body>
+<h1><center><ins>Formulario para BECAS HYBE</ins></center></h1>
+
+<form action="insertarregistro.php" method="post">
+   <p><b>Nombres:</b> <input type="text" name="nombres" size="60" placeholder="Escriba sus dos nombres en caso de tener" pattern="(A-Za-z)(2,15)" title=" Puede usar mayusculas y minusculas, cantidad minima 2 y maxima 15"/></p>
+   
+    <p><b> Apellidos :</b> <input type="text" name="apellidos" size="60"  placeholder="Escriba sus dos apellidos en caso de tener" pattern="[A-Za-z](2,15)" title=" Puede usar mayusculas y minusculas, cantidad minima 2 y maxima 15 "/></p>
+   
+    <p><b>C.I:</b> <input type="number" name="ci" required="required" /></p>
+    
+	<p><b>Fecha Nacimiento:</b> <input type="date" name="naci" required="required" /></p>
+    
+    <p><b>Edad:</b> <input type="number" name="edad" min="18" max="30" placeholder="Cargue la edad entre 18 y 30" required="required" size="45" /></p>
+    
+   <p><b>Edad;</b> <input type="number" name="n" required="required" /> </p><!-- size indica el tamanho del recuadro-->
+    
+    <p><b> Telefono:</b> <input type="tel" name="telef" required="required" title="Favor cargue el te;efono cpn el cero"/></p>
+    
+    <p><b> Ciudad:</b> <input type="text" name="ciu" required="required" /></p>
+    
+    <p><b> Correo:</b> <input type="email" name="correo" required="required" /></p>
+
+<br /><br />
+<p><b><ins><big> Seleccione:</p></b></ins></big>
+
+<p><b> Sexo:<br/></p></b>
+    <input type="radio" name="hm" value="h" /> Hombre<br />
+    <input type="radio" name="hm" value="m" /> Mujer<br />
+    <input type="radio" name="hm" value="o" /> Otro<br />
+<br />
+<p><b>Estado Civil:<br/></p></b>
+    <input type="radio" name="c" value="casado" /> Casado<br />
+    <input type="radio" name="c" value="div" /> Divorciado<br />
+    <input type="radio" name="c" value="sol" /> Soltero<br />
+    <input type="radio" name="c" value="div" /> Viudo<br />
+
+<br />
+<p><b> Cuenta con casa?:<br/></p></b>
+    <input type="radio" name="a" value="al" /> Alquilada<br />
+    <input type="radio" name="a" value="pro" /> Propia<br />
+    <input type="radio" name="a" value="fami" /> casa familiar<br />
+<br />
+<p><b> Con quien vive?:<br/></p></b>
+    <input type="radio" name="b" value="pa" /> Padres<br />
+    <input type="radio" name="b" value="abu" /> Abuelos<br />
+    <input type="radio" name="b" value="ti" /> Tios<br />
+    <input type="radio" name="b" value="sol" /> Solo<br />
+<br />
+<b><p> Realidad laboral:<br/></p></b>
+    <input type="radio" name="d" value="trabc" /> Trabaja por su cuenta<br />
+    <input type="radio" name="d" value="trabdep" /> Trabajador dependiente<br />
+    <input type="radio" name="d" value="notrab" /> No trabajo<br />
+<br />
+<p><b> Ingreso mensual:<br/></p></b>
+    <select name="Mensual">
+    <option value="00">0</option>
+    <option value="1">1000000</option>
+    <option value="12">1000001 a 2000000</option>
+    <option value="24">2000001 a 4000000</option>
+    <option value="ma4">Mayor a 4000000</option> </select><br />
+<br />
+<p><b> Posee hijos?:<br /></p></b>
+
+    <select name="Cantidad de hijos">
+    <option value="0">0</option>
+    <option value="1a2">1 a 2</option>
+    <option value="34">3 a 4</option>
+    <option value="m4">Mayor a 4</option> </select><br />
+<br />
+<p><b> Cuenta con hermanos?:<br /></p></b>
+    
+    <select name="Hermanos">
+    <option value="0h">0</option>
+    <option value="1h">1 </option>
+    <option value="2h">2</option>
+    <option value="m2">Mayor a 2</option> </select><br />
+    
+<br /><br />
+
+ <p><b><ins><big> Ingrese:</p></b></ins></big>
+    
+     <p> <b>Seleccione su certificado de estudio</p></b>
+     <input type="file" name="archivo" />
+ <br />
+     <p><b> Seleccione su foto</p></b>
+     <input type="file" name="archivo" />
+ <br />
+     <p><b> Escriba el por que usted esta solicittando esta beca</p></b>
+     <textarea name="texto" rows="5" cols="40"></textarea>
+     
+    <p><b>Ingrese contraseña: <input type="password" pattern="c" name="contra"/></b></p>
+    
+    <p><b>Confirme contraseña, DEBEN COINCIDIR!!: <input type="password" pattern="c" name="contra"/></b></p>
+<br /><br />
+
+    <input type="submit" value="Enviar solicitud" formtarget="_blank" />
+    <input type="reset" value="Limpiar solicitud" />
+    </form>
+    
+
+</body>
+</html>

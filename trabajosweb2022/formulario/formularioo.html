@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+
+<form action="insertarregistro.php" method="post">
+<p>Nombre alumno: <input type="text" name="nombre" autofocus="autofocus" required="required"
+title= "Favor cargue nombre completo"/></p>
+<p> Apellido: <input type="text" name="comen" required="required" /></p>
+
+<p> Telefono: <input type="tel" name="telef" required="required" title="Favor cargue el te;efono cpn el cero"/>
+<p> Correo: <input type="email" name="correo" required="required" /></p>
+<p>Fecha Nacimiento: <input type="date" name="naci" required="required" /></p>
+
+<br />
+<p> sexo:<br/>
+<input type="radio" name="hm" value="h" /> hombre<br />
+<input type="radio" name="hm" value="m" /> mujer<br />
+
+<p> estado:<br/>
+<input type="radio" name="c" value="casado" /> casado<br />
+<input type="radio" name="c" value="div" /> divorciado<br />
+<input type="radio" name="c" value="sol" /> soltero<br />
+<input type="radio" name="c" value="div" /> viudo<br />
+
+
+
+<input type="submit" value="Procesar Consulta AFA" formtarget="_blank" />
+<input type="reset" value="Limpiar Formulario" />
+
+</body>
+</html>

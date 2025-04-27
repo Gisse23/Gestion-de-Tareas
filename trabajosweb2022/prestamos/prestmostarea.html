@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+ <form action="credito.php" method="post">
+
+<h1><p><b><center><ins><a name="datosp"><font color="#66FFCC">Datos Personales</a></b></p></center></ins></font></h1>
+  <ol> 
+     <p><b><li>Seleccione su foto</p></b></li>
+     <input type="file" name="archivo" />
+
+ <br />
+
+        <p><b><li>C.I:</b></li> <input type="number" name="ci" placeholder="Cargue numero de cedula"  size="60" required="required" /></p>
+    
+       <p><b><li>Nombre:</b> </li><input type="text" name="nombre" size="60" placeholder="Cargue Nombre" required="required" title= "Favor cargue nombre completo"/></p>
+       
+        <p><b><li> Apellido :</b></li><input type="text" name="apellidos" size="60"  placeholder="Cargue Apellido" required="required" title=" Ingrese apellido "/></p>
+        
+       <p><b><li>Estado Civil:<br/></li></p></b>
+ 
+     <select name="estado">
+        <option value="Casado">Casado</option>
+        <option value="Divorciado">Divorciado</option>
+        <option value="Soltero">Soltero</option>
+        <option value="Viudo">Viudo</option>
+        </select><br />
+    
+    
+    <p><b><li> Sexo:</p></b></li>
+        <input type="radio" name="hm" value="Hombre" /> Hombre<br />
+        <input type="radio" name="hm" value="Mujer" /> Mujer<br />
+        <input type="radio" name="hm" value="Otro" /> Otro<br />
+   
+    
+        <p><b><li>Fecha Nacimiento:</b></li> <input type="date" name="naci" required="required" /></p>
+            
+    <p><b><li>Edad:</b></li> <input type="number" name="edad" min="18" max="50" size="60" placeholder="Cargue la edad entre 18 y 50" required="required" /></p>
+ </ol>  
+ 
+<br />
+
+<h1><p><b><center><ins><a name="datosfina"><font color="#99FF00"> Datos Financieros</a></center></ins></b></p></font></h1>
+
+<ol>
+<br />
+    <p><b><li>Ingreso:<br /></p></b></li>
+    
+        <select name="montoi">
+        <option value="1">1000000 hasta 2000000</option>
+        <option value="2">2000000 hasta 4000000</option>
+        <option value="3">4000000 hasta 6000000</option>
+        <option value="4">6000000 hasta 8000000</option>
+        <option value="5">Mayor a 8000000</option>
+
+        </select><br />
+    
+       <p><b><li>Año de antiguedad laboral:</b></li> <input type="number" name="me" min="1" max="30" placeholder=" Cargue el Año de antiguedad desde el 1 hasta el 30" size="60" required="required" /> </p>
+   
+    <p><b><li>Egreso mensual:</p></b></li>
+    
+        <select name="montoe">
+        <option value="1">200000 hasta 1000000</option>
+        <option value="2">1000000 hasta 2000000</option>
+        <option value="3">2000000 hasta 4000000</option>
+        <option value="4">4000000 hasta 6000000</option>
+        <option value="5">6000000 hasta 8000000</option>
+        <option value="6">Mayor a 8000000</option>
+        </select><br />
+      
+       <p><b><li>Monto solicitado:</b></li> <input type="number" name="mosoli" min="10000000" max="50000000" size="60" placeholder="Carguemonto entre 10000000 y 50000000" required="required" /></p>
+
+    <p><li><b>Cantiad de cuotas</li></b> (de 6 a 26, de 4) en 4:</p>           
+            <select name="cuotas">
+        <option value="6">6</option>
+        <option value="10">10</option>
+        <option value="14">14</option>
+        <option value="18">18</option>
+        <option value="22">22</option>
+        <option value="26">26</option>
+        </select><br />
+</ol>
+
+<h1><p><b><center><ins><a name="otrosdat"><font color="#FF6600">Otros Datos</a></b></p></font></center></ins></h1>
+<ol>
+<br />
+    <p><b><li>Cuenta con hijos?:<br /></p></b></li>
+        
+        <input type="radio" name="s" value="Si" /> Si<br />
+        <input type="radio" name="s" value="No" /> No<br />        
+        
+
+    <p><b><li>Vive en casa:<br/></p></b></li>
+        <input type="radio" name="a" value="Propia" /> Propia<br />
+        <input type="radio" name="a" value="Alquilada" /> Alquilada<br />
+        <input type="radio" name="a" value="Familiar" /> Familiar<br />
+   
+    <p><b><li>Enfermedades que padezca:</p></li></b>
+    <input type="checkbox" name="d1" value="Cardiaco" />Cardiaco<br />
+    <input type="checkbox" name="d2" value="Anemia"  />Anemia<br />
+    <input type="checkbox" name="d3" value="Hipertension"  />Hipertension<br />
+    <input type="checkbox" name="d4" value="Problemas articulares"  />Problemas articulares <br />
+    <input type="checkbox" name="d4" value="Alergias"  />Alergias <br />
+
+ </ol> 
+  
+
+    
+     <br />
+     <input type="submit" value="Enviar" />
+     <input type="reset" value="Limpiar Formulario" />
+     <br>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<p> Seleccione que deporte le gauta</p>
+<input type="checkbox" name="d1" value="0" />Tenis<br />
+<input type="checkbox" name="d2" value="1" checked="checked" />Futbol <br />
+<input type="checkbox" name="d3" value="2"  />Natacion<br />
+<input type="checkbox" name="d4" value="3"  />Runing <br />
+
+<p>Selecciona ciudad de sesidencia<p>
+<input type="radio" name="boton" value="1" checked="checked" /> Carapegua<br />
+<input type="radio" name="boton" value="2" checked="checked" /> Roque Gonzalez<br />
+<input type="radio" name="boton" value="3" checked="checked" /> Paraguari<br />
+<input type="radio" name="boton" value="4" checked="checked" /> Acahay<br />
+<input type="radio" name="boton" value="5" checked="checked" /> Quiindy<br />
+<input type="radio" name="boton" value="6" checked="checked" /> Otra ciudad<br />
+
+<p> Indique su nivel (de 1 a 10, de 3 en 3):</p>
+	<input type="range" name="rango" value="0"
+   min="1" max="10" step="3" /><br />
+   
+<p> Indique su nivel (de 0 a 1, de 0,1) en 0,1:</p>
+		<input type="range" name="rangootro" value="0"
+
+	   min="0" max="1" step="0.1" /><br />
+       
+       
+       
+ <p> seleccione su trabajo</p>
+ <input type="file" name="archivo" />
+ <p> Escriba un mensaje para enviar</p>
+ <textarea name="texto" rows="5" cols="40"></textarea>
+ 
+<p>Seleccione su club</p>
+<select name="Club">
+<option value="0">...........</option>
+<option value="ce">cerro porteno</option>
+<option value="oli">olimpia</option>
+<option value="li">libertad</option>
+
+<br />
+<p> Seleccion por grupo</p>
+<select name="menu">
+	<option selected="selected">...</option>
+    <optgroup label="Grupo 1">
+    	<option value="1">Opcion uno</option>
+        <option value="2">Opcion dos</option>
+        <option value="3">Opcion tres</option>
+     </optgroup>
+        
+       <optgroup label="Grupo 2">
+    	<option value="4">Opcion cuatro</option>
+        <option value="5">Opcion cinco</option>
+        <option value="6">Opcion seis</option>
+     </optgroup>  
+         <optgroup label="Grupo 3">
+    	<option value="7">Opcion siete</option>
+        <option value="8">Opcion ocho</option>
+        <option value="9">Opcion nueve</option>
+     </optgroup>
+     
+     </select>
+
+     
+     <br />
+     <input type="submit" value="Enviar" />
+     <input type="reset" value="Limpiar Formulario" />
+     <br>
+
+
+
+
+</body>
+</html>

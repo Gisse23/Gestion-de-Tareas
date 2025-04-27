@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ficha  paciente</title>
+</head>
+
+<body>
+
+<form action="prodatfi.php" method="post">
+
+<h1><center><ins><font color="#000099">Ficha de Paciente</font></ins></center></h1>
+
+<h1><p><b><center><ins><font color="#66FFCC">Datos Personales</b></p></center></ins></font></h1>
+  <ol> 
+
+        <p><b><li>C.I:</li></b> <input type="number" name="ci" placeholder="Cargue numero de cedula del paciente "  size="40" required="required" /></p>
+    
+       <p><b><li>Nombre:</li></b> <input type="text" name="nombre" size="40" placeholder="Cargue Nombre del paciente" required="required" title= "Favor cargue nombre completo"/></p>
+       
+        <p><b><li> Apellido :</li></b><input type="text" name="apellidos" size="50"  placeholder="Cargue Apellidodel paciente " required="required" title=" Ingrese apellido del paciente  "/></p>
+
+    <p><b><li>Tipo de seguro:<br/></li></p></b>
+ 
+     <select name="seguro">
+        <option value="Domestico">Domestico</option>
+        <option value="Familiar">Familiar</option>
+        <option value="Titular">Titular</option>
+        
+        </select><br />
+ </ol> 
+ 
+ 
+ 
+ <h1><p><b><center><ins><font color="#99FF00"> Valores Corporales</center></ins></b></p></font></h1>
+
+<ol>
+        <p><b><li>Presion arterial sistolica:</li></b></p>
+        
+         <select name="sis">
+        <option value="90">90</option>
+        <option value="100">100</option>
+        <option value="110">110</option>
+        <option value="120">120</option>
+        <option value="130">130</option>
+        <option value="140">140</option>
+        <option value="150">150</option>
+        <option value="160">160</option>
+        <option value="170">170</option>
+        </select><br />
+        
+        
+        <p><b><li>Presion arterial diastolica:</li></b> </p>
+        
+         <select name="dia">
+        <option value="60">60</option>
+        <option value="70">70</option>
+        <option value="80">80</option>
+        <option value="90">90</option>
+        <option value="100">100</option>
+        <option value="110">110</option>
+        </select><br />
+        
+        
+    <p><b><li>Nivel de Glicemia:</li></b></p>
+    
+     
+        <input type="radio" name="gli" value="80 a 90" /> 80 a 90<br />
+        <input type="radio" name="gli" value="91 a 100" /> 91 a 100<br />
+        <input type="radio" name="gli" value="101 a 120" /> 101 a 120<br />
+        <input type="radio" name="gli" value="121 a 140" /> 121 a 140<br />
+        <input type="radio" name="gli" value="141 a 200" /> 141 a 200<br />
+
+    <p><b><li>Saturacion de Oxigeno:</li></b> <input type="number" name="oxi" min="80" max= "100 " size="30" placeholder="ingrese valor entre 1 y 100"required="required" /></p>
+
+</ol>
+
+
+<br />
+
+<h1><p><b><center><ins><font color="#FF6600">Valores de Laboratorio</b></p></font></center></ins></h1>
+<ol>
+    <p><b><li>Trigliceridos:</li></b> <input type="number" name="trig" min="80" max="500"  size="8" required="required" /></p>
+    
+    <p><b><li>Colesterol:</li></b> <input type="number" name="cole" min="1"  size="8"  required="required" /></p>
+    <p><b><li>Hemoglobina:</li></b> <input type="number" name="hemog" min="1"  size="8" required="required" /></p>
+
+ </ol> 
+ 
+
+    <br />
+     <input type="submit" value="Enviar" />
+     <input type="reset" value="Limpiar Formulario" />
+     <br>
+</form>
+
+
+</body>
+</html>

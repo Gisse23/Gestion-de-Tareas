@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<h1><center><ins><font color="#66FFCC"> Datos Personales</ins></center></h1></font>
+
+<img src="IMG-20200923-WA0643.jpg" width="20%" height="20%" />
+
+<form action="insertarregistro.php" method="post">
+<ol>
+        <p><b><li>C.I:</b></li> <input type="number" name="ci" placeholder="Cargue numero de cedula"  size="60" required="required" /></p>
+    
+       <p><b><li>Nombre:</b> </li><input type="text" name="nombre" size="60" placeholder="Cargue Nombre" required="required" title= "Favor cargue nombre completo"/></p>
+       
+        <p><b><li> Apellido :</b></li><input type="text" name="apellidos" size="60"  placeholder="Cargue Apellido" required="required" title=" Ingrese apellido "/></p>
+        
+       <p><b><li>Estado Civil:<br/></li></p></b>
+        <input type="radio" name="c" value="casado" /> Casado<br />
+        <input type="radio" name="c" value="div" /> Divorciado<br />
+        <input type="radio" name="c" value="sol" /> Soltero<br />
+        <input type="radio" name="c" value="div" /> Viudo<br />
+    
+    <br /><br />
+    
+    <p><b><li> Sexo:<br/></p></b></li>
+        <input type="radio" name="hm" value="h" /> Hombre<br />
+        <input type="radio" name="hm" value="m" /> Mujer<br />
+        <input type="radio" name="hm" value="o" /> Otro<br />
+    <br /><br />
+        <p><b><li> Ciudad:</b></li> <input type="text" name="ciu" placeholder="Cargue ciudad" size="60" required="required" /></p>
+    
+        <p><b><li>Fecha Nacimiento:</b></li> <input type="date" name="naci" required="required" /></p>
+            
+    <p><b><li>Edad:</b></li> <input type="number" name="edad" min="18" max="50" size="60" placeholder="Cargue la edad entre 18 y 50" required="required" /></p>
+ </ol>  
+  </form>
+ 
+<br />
+
+<p><a href="indice.html"target="_blank">Volver al indice</a></p>
+
+
+</body>
+</html>

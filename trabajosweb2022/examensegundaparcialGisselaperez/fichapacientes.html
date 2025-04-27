@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>fichapacientes</title>
+</head>
+<form action="ficha.php" method="post">
+
+<h1><center><ins><font color="#000099">Ficha de Paciente</font></ins></center></h1>
+
+<h1><p><b><center><ins><font color="#66FFCC">Datos Personales</b></p></center></ins></font></h1>
+  <ol> 
+
+        <p><b><li>C.I:</li></b> <input type="number" name="ci" placeholder="Cargue numero de cedula del paciente "  size="60" required="required" /></p>
+    
+       <p><b><li>Nombre:</li></b> <input type="text" name="nombre" size="60" placeholder="Cargue Nombre del paciente" required="required" title= "Favor cargue nombre completo"/></p>
+       
+        <p><b><li> Apellido :</li></b><input type="text" name="apellidos" size="60"  placeholder="Cargue Apellidodel paciente " required="required" title=" Ingrese apellido del paciente  "/></p>
+    
+    <p><b><li> Sexo:</p></li></b>
+        <input type="radio" name="hm" value="Masculino" /> Masculino<br />
+        <input type="radio" name="hm" value="Femenino" /> Femenino<br />
+        <input type="radio" name="hm" value="Otro" /> Otro<br />
+   
+    <p><b><li>Fecha Nacimiento:</li></b> <input type="date" name="naci" required="required" /></p>
+
+    <p><b><li>Tipo de seguro:<br/></li></p></b>
+ 
+     <select name="seguro">
+        <option value="Domestico">Domestico</option>
+        <option value="Familiar">Familiar</option>
+        <option value="Titular">Titular</option>
+        
+        </select><br />
+ </ol> 
+ 
+ 
+ 
+ <h1><p><b><center><ins><font color="#99FF00"> Valores Corporales</center></ins></b></p></font></h1>
+
+<ol>
+        <p><b><li>Presion arterial sistolica:</li></b> <input type="number" name="sis" min="1" max="200" size="30" placeholder="ingrese valor entre 1 y 200"  required="required" /></p>
+        <p><b><li>Presion arterial diastolica:</li></b> <input type="number" name="dia" min="1" max="200" size="30" placeholder="ingrese valor entre 1 y 200"  required="required" /></p>
+    <p><b><li>Nivel de Glicemia:</li></b> <input type="number" name="gli" min="1" size="8" required="required" /></p>
+
+    <p><b><li>Saturacion de Oxigeno:</li></b> <input type="number" name="oxi" min="1" max= "100 " size="30" placeholder="ingrese valor entre 1 y 100"required="required" /></p>
+
+</ol>
+
+<br />
+
+<h1><p><b><center><ins><font color="#FF6600">Valores de Laboratorio</b></p></font></center></ins></h1>
+<ol>
+    <p><b><li>Trigliceridos:</li></b> <input type="number" name="trig" min="80" max="500"  size="8" required="required" /></p>
+    
+    <p><b><li>Colesterol:</li></b> <input type="number" name="cole" min="1"  size="8"  required="required" /></p>
+    <p><b><li>Hemoglobina:</li></b> <input type="number" name="hemog" min="1"  size="8" required="required" /></p>
+
+ </ol> 
+ 
+
+    <br />
+     <input type="submit" value="Enviar" />
+     <input type="reset" value="Limpiar Formulario" />
+     <br>
+</form>
+</body>
+</html>

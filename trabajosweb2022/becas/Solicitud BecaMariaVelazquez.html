@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Solicitud Beca</title>
+</head>
+<Desarrolla un formulario que nos permita cargar solicitud de beca. Los datos son: (CI, Nombres, Apellidos, Sexo, estado civil , fecha de nacimiento , edad, nro de telefono, ciudad)
+Con quien vive(padres, abuelo,tios,tutor, solo) Cunenta con casa(propia, alquilada, familiar, prestada, )Cantidad de hijos(1,2,3,0). Realidad laboral(Dependiente, independiente, no trabaja). Ingreso mensual(0, menor 500000, 500000 -- 10000000, 1000001 -- 2000000, 2000001 -- 4000000, mayor 4000001), Cuenta con hermanos(1, 2, 2, mas). Debe enviar un escribo del porque solicita la beca, Solicitante debe enviar una posible contrasenha y debe conformarla. Debera enviar certificado de estudio, y foto de la cedula frontal, por separado. Debera tener boton de enviar y limpiar>
+
+<form action="VerificarBeca.php" method="post">;
+<dl><center><img src="Beca1.png" alt="de2" /></center>
+
+<h1><center><ins><a name="indice"><font color="#000099">Solicitud de Beca 2023</font></a></ins></center></h1>
+<form action="insertarregistro.php" method="post">
+</dl>
+<p><b><ins><font size="+1" >Rellene el formulario con veracidad</font></ins></b></p>
+<p><b><ins><font size="+3" ><center>Datos Personales</center></font></ins></b></p>
+<p>C.I:<input type="number" name="ci" autofocus="autofocus" required="required"  placeholder="Cargue sin puntos" pattern="[A-Za-z]" min=4000000 max="8000000" /></p>
+<p>Nombres: <input type="text" name="nom"  required="required"/></p>
+<p>Apellidos: <input type="text" name="ape" autofocus="autofocus" required="required"/></p>
+<p><font size="+2"><ins>Sexo: </ins></font> </p>
+ <input type="radio" name="boton2" value="Femenino" checked="checked" />Femenino<br />
+<input type="radio" name="boton2" value="Masculino" />Maculino<br />
+<input type="radio" name="boton2" value="No Binario" />No Binario<br />
+<p><font size="+2"><ins>Fecha de nacimiento: </ins></font>  <input type="date" name="fnaci" required="required"/></p>
+<p><font size="+2"><ins>Edad: </ins></font>  <input type="number" name="edad" min=10 max=50 required="required"/></p>
+
+
+<p><b><ins><font size="+3" ><center>Datos Academicos y familiares</center></font></ins></b></p>
+
+<p>Seleccione colegio de origen</p>
+<select name="colegio">
+	<option value="Saturio Rios" >Colegio Saturio Rios</option>
+    <option value="Las Teresas" >Colegio Las Teresas</option>
+    <option value="Las Teresas" >Colegio Cristo Rey</option>
+    <option value="San Roque" >Colegio San Roque</option>
+    <option value="Nacional de Quiindy" >Colegio Nacional de Quiindy</option>
+    <option value="Otro" >Otro</option>
+    </select><br />
+
+<p>Seleccione Promedio de Notas</p>
+<select name="nota">
+	<option value="1" >1</option>
+    <option value="2" >2</option>
+    <option value="3" >3</option>
+    <option value="4" >4</option>
+    <option value="5" >5</option>
+    
+    </select><br />
+
+<p>Con quien vive</p>
+<select name="vivienda">
+	<option value="Padres" >Padres</option>
+    <option value="Abuelos" >Abuelos</option>
+    <option value="Tios" >Tios</option>
+    <option value="Tutor" >Tutor</option>
+    <option value="Solo" >Solo</option>
+  </select><br />
+    
+<p> Cuenta con casa</p>
+<select name="hogar">
+	<option value="Propia" >Propia</option>
+    <option value="Alquilado" >Alquilado</option>
+    <option value="Prestado" >Prestado</option>
+    <option value="Familiar" >Familiar</option>
+  </select><br />
+  
+ <p><font size="+2"><ins>Cantidad de Hermanos: </ins></font> </p>
+ <input type="radio" name="boton4" value="0" checked="checked" />0<br />
+ <input type="radio" name="boton4" value="1" />1<br />
+<input type="radio" name="boton4" value="2" />2<br />
+<input type="radio" name="boton4" value="3" />3 o mas<br />
+
+<p> Seleccione ingreso mensual</p>
+<input type="radio" name="boton5" value="1" />500.000 -- 1.000.000<br />
+<input type="radio" name="boton5" value="2"  />1.000.001 -- 2.000.000<br />
+<input type="radio" name="boton5" value="3"  />2.000.001 -- 4.000.000<br />
+<input type="radio" name="boton5" value="4"  /> < 4.000.000 <br />
+
+<p> Escriba porque solicita la beca </p>
+<textarea name="texto" rows="5" cols="40"></textarea><br />
+
+<b>
+ <center><input type="submit" value="Enviar" />
+<input type="reset" value="Limpiar" /></center>
+
+
+</body>
+</html>
